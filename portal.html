@@ -109,18 +109,7 @@
 </head>
 <body class="bg-surface text-on-surface font-body-md selection:bg-tertiary-fixed-dim selection:text-tertiary-container">
 <!-- TopNavBar -->
-<header class="fixed top-0 left-0 w-full z-50 bg-surface border-b border-outline-variant">
-<div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
-<div class="font-headline-md text-headline-md font-bold text-primary tracking-tight"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA84T8gUhPEiAv64FlkwqW10usP5cNf5hrCyv7bbf_w-Jo55dIVqVr3NrR8-SswI0CTdjs8q4a11kMovSLDfrwgRoqfMp7SdD7e3BJUqqwR-ACLtZf9OPDwkGwr2j3r9aNnjyO0175BcLauvIQUCXEkxSGm-jJ0c6gd4S98deTZVCHMg4NR5IYJn3Evu5fN6Z9EmnYGkct5q6Y_U4MFeJHrmSv605yyuxJx2CvESn5xxLw0AzfNTughyZG0zHvi6_VkxA8uEe67Tm4" alt="EQUITY3000 Logo" class="h-8 md:h-10 w-auto object-contain"></div>
-<nav class="hidden md:flex items-center space-x-8"><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-tertiary-fixed-dim transition-all duration-300" href="index.html">Home</a>
-<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-tertiary-fixed-dim transition-all duration-300" href="opportunities.html">Opportunities</a>
-<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-tertiary-fixed-dim transition-all duration-300" href="team.html">Our Team</a></nav>
-<div class="flex items-center gap-4">
-<a href="contact.html" class="hidden lg:block px-6 py-3 bg-transparent border border-primary-container text-on-surface font-label-md uppercase tracking-wider hover:bg-surface-container transition-colors duration-300 rounded text-center">Contact US</a>
-
-</div>
-</div>
-</header>
+<div id="shared-nav"></div>
 <main class="pt-20">
 <!-- Hero Section -->
 <section class="relative min-h-[870px] flex items-center overflow-hidden">
@@ -211,20 +200,7 @@
 
 </main>
 <!-- Footer -->
-<footer class="bg-primary-container border-t border-outline-variant w-full">
-<div class="flex flex-col md:flex-row justify-between items-center w-full px-gutter py-stack-lg max-w-container-max mx-auto">
-<div class="mb-8 md:mb-0">
-<div class="font-headline-sm text-headline-sm text-on-primary-container mb-4"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6qPsP3gzc570OqpJLvjyD27bat50TXtDJrssIN8WtZklnCcTjZdRwUdaaP5MtbBcPtNq11WZeFS0UdlXuMSm5vNpN18aDhKrn-9dzZGzFlr66uz4DVig-CXHNy7FORWnFMb5ILA0wwmbDhQpUFP-vit0r_umddiuzSX4du-Cd5KB1DclsR-lDHLmXHBEWus274nEXHeF_pOrsCxesmPT2iWaMNz3qXIzrAxZCad3kAF4v2MuT62EZVNjutus0NI_DSKV7RZM5Zt33iQ" alt="EQUITY3000 Logo" class="h-8 w-auto object-contain brightness-0 invert opacity-80"></div>
-<p class="font-body-md text-body-md text-on-primary-container opacity-80 max-w-xs">© 2024 Equity3000 All rights reserved.</p>
-</div>
-<div class="flex flex-wrap justify-center gap-x-8 gap-y-4">
-<a class="font-label-md text-label-md text-on-primary-container opacity-80 hover:opacity-100 hover:text-surface-bright transition-colors" href="#">NDA</a>
-<a class="font-label-md text-label-md text-on-primary-container opacity-80 hover:opacity-100 hover:text-surface-bright transition-colors" href="#">Privacy Policy</a>
-
-
-</div>
-</div>
-</footer>
+<div id="shared-footer"></div>
 <script>
         // Simple Carousel micro-interaction
         const carousel = document.getElementById('carousel');
@@ -268,4 +244,5 @@
 
 
 
+<script src="shared.js"></script>
 </body></html>
