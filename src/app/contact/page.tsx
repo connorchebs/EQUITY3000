@@ -1,10 +1,6 @@
 'use client';
 
-import Image from "next/image";
 import { useState } from "react";
-
-const MAP_IMAGE =
-  "https://lh3.googleusercontent.com/aida-public/AB6AXuCUtSbq-jbxWQHR1gqepWrAVm-e1MY7GxfOUMYqv0SinNRlUw_x62QGdc_SC8pfYZ817srMX5hFSNu6oBc_-NbsHPjkOlE7bOBs2yvbkbSX7OGuL1uecWn9FtSiUF88CGoIOuPqMiTqIqMwjtFSj-XUN_ykh9usXCQ_xaNae02NhKVWNb2l4dVSnCFSsnNC6p3pXlfZN95SmSyOdCEe-kBT2n2_sfpt-qf6QaUAHDe4pgAa-qbEdRcb7yocbW33b08sKVDWFNI";
 
 export default function ContactPage() {
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
@@ -147,40 +143,8 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="py-section-padding bg-surface-container-high overflow-hidden">
-        <div className="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
-          <div className="text-center mb-stack-lg">
-            <h2 className="font-headline-md text-headline-md text-primary">Global Strategic Network</h2>
-            <p className="font-body-md text-secondary mt-stack-sm mx-auto max-w-xl">
-              Our presence spans across key financial hubs, providing on-the-ground intelligence and direct access to emerging markets.
-            </p>
-          </div>
-          <div className="relative w-full aspect-video md:aspect-[21/9] border border-outline-variant shadow-sm grayscale opacity-90 hover:grayscale-0 transition-all duration-700 overflow-hidden bg-surface-container">
-            <div className="absolute inset-0 bg-primary/5 pointer-events-none z-10"></div>
-            <Image src={MAP_IMAGE} alt="Global Presence Map" fill className="object-cover" />
-            <div className="absolute inset-0 pointer-events-none z-20">
-              <div className="absolute top-[35%] left-[24%] flex flex-col items-center">
-                <div className="w-2 h-2 bg-tertiary-fixed rounded-full animate-pulse"></div>
-                <span className="font-label-md text-[10px] text-white bg-on-primary-fixed/80 px-2 py-0.5 mt-1 backdrop-blur-sm">NEW YORK</span>
-              </div>
-              <div className="absolute top-[28%] left-[47%] flex flex-col items-center">
-                <div className="w-2 h-2 bg-tertiary-fixed rounded-full animate-pulse"></div>
-                <span className="font-label-md text-[10px] text-white bg-on-primary-fixed/80 px-2 py-0.5 mt-1 backdrop-blur-sm">LONDON</span>
-              </div>
-              <div className="absolute top-[42%] left-[60%] flex flex-col items-center">
-                <div className="w-1.5 h-1.5 bg-outline rounded-full"></div>
-                <span className="font-label-md text-[10px] text-white bg-on-primary-fixed/80 px-2 py-0.5 mt-1 backdrop-blur-sm">DUBAI</span>
-              </div>
-              <div className="absolute top-[58%] left-[78%] flex flex-col items-center">
-                <div className="w-1.5 h-1.5 bg-outline rounded-full"></div>
-                <span className="font-label-md text-[10px] text-white bg-on-primary-fixed/80 px-2 py-0.5 mt-1 backdrop-blur-sm">SINGAPORE</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <section className="py-stack-lg bg-on-primary-fixed text-on-primary">
+<section className="py-stack-lg bg-on-primary-fixed text-on-primary">
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-gutter flex flex-col md:flex-row justify-between items-center gap-stack-md text-center md:text-left">
           <div>
             <h3 className="font-headline-sm text-headline-sm text-primary-fixed">Market Intelligence</h3>
