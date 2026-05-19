@@ -1,7 +1,6 @@
 import Image from "next/image";
 
-const LOGO_URL =
-  "https://lh3.googleusercontent.com/aida-public/AB6AXuA84T8gUhPEiAv64FlkwqW10usP5cNf5hrCyv7bbf_w-Jo55dIVqVr3NrR8-SswI0CTdjs8q4a11kMovSLDfrwgRoqfMp7SdD7e3BJUqqwR-ACLtZf9OPDwkGwr2j3r9aNnjyO0175BcLauvIQUCXEkxSGm-jJ0c6gd4S98deTZVCHMg4NR5IYJn3Evu5fN6Z9EmnYGkct5q6Y_U4MFeJHrmSv605yyuxJx2CvESn5xxLw0AzfNTughyZG0zHvi6_VkxA8uEe67Tm4";
+const LOGO_URL = "/EQUITY3000/EQU3000-NB-site.png";
 
 export default function Footer() {
   return (
