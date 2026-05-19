@@ -56,49 +56,8 @@ export default function ContactPage() {
 
       <section className="py-section-padding bg-surface">
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-stack-lg">
-            <div className="md:col-span-4 space-y-stack-md">
-              <div className="p-stack-md border border-outline-variant border-t-2 border-t-tertiary-fixed-dim bg-surface-container-lowest">
-                <h3 className="font-headline-sm text-headline-sm text-primary mb-stack-sm">London Headquarters</h3>
-                <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <span className="material-symbols-outlined text-on-secondary-container mt-1">location_on</span>
-                    <p className="font-body-md text-secondary">
-                      30 St Mary Axe (The Gherkin),<br />EC3A 8BF London,<br />United Kingdom
-                    </p>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <span className="material-symbols-outlined text-on-secondary-container mt-1">call</span>
-                    <p className="font-body-md text-secondary">+44 (0) 20 7946 0123</p>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <span className="material-symbols-outlined text-on-secondary-container mt-1">mail</span>
-                    <p className="font-body-md text-secondary">london.desk@equity3000.com</p>
-                  </div>
-                </div>
-              </div>
-              <div className="p-stack-md border border-outline-variant bg-surface-container-lowest">
-                <h3 className="font-headline-sm text-headline-sm text-primary mb-stack-sm">New York Office</h3>
-                <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <span className="material-symbols-outlined text-on-secondary-container mt-1">location_on</span>
-                    <p className="font-body-md text-secondary">
-                      One World Trade Center,<br />NY 10007 New York,<br />United States
-                    </p>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <span className="material-symbols-outlined text-on-secondary-container mt-1">call</span>
-                    <p className="font-body-md text-secondary">+1 (212) 555-0198</p>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <span className="material-symbols-outlined text-on-secondary-container mt-1">mail</span>
-                    <p className="font-body-md text-secondary">ny.desk@equity3000.com</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="md:col-span-8">
+          <div className="grid grid-cols-1 gap-stack-lg">
+            <div>
               <div className="bg-surface-container-lowest p-stack-md md:p-stack-lg border border-outline-variant">
                 <h2 className="font-headline-md text-headline-md text-primary mb-stack-md">Investor Inquiry Form</h2>
 
@@ -116,7 +75,7 @@ export default function ContactPage() {
                           Full Name
                         </label>
                         <input
-                          className="bg-surface-container-low border-0 border-b border-outline-variant focus:border-tertiary-fixed-dim focus:ring-0 px-0 py-3 font-body-md text-on-surface transition-all"
+                          className="bg-surface-container-low border-0 border-b border-outline-variant focus:border-tertiary-fixed-dim focus:ring-0 px-3 py-3 font-body-md text-on-surface transition-all"
                           id="name" name="name" placeholder="Johnathan Doe" type="text" required
                         />
                       </div>
@@ -125,7 +84,7 @@ export default function ContactPage() {
                           Professional Email
                         </label>
                         <input
-                          className="bg-surface-container-low border-0 border-b border-outline-variant focus:border-tertiary-fixed-dim focus:ring-0 px-0 py-3 font-body-md text-on-surface transition-all"
+                          className="bg-surface-container-low border-0 border-b border-outline-variant focus:border-tertiary-fixed-dim focus:ring-0 px-3 py-3 font-body-md text-on-surface transition-all"
                           id="email" name="email" placeholder="j.doe@firm.com" type="email" required
                         />
                       </div>
@@ -136,7 +95,7 @@ export default function ContactPage() {
                           Firm / Organization
                         </label>
                         <input
-                          className="bg-surface-container-low border-0 border-b border-outline-variant focus:border-tertiary-fixed-dim focus:ring-0 px-0 py-3 font-body-md text-on-surface transition-all"
+                          className="bg-surface-container-low border-0 border-b border-outline-variant focus:border-tertiary-fixed-dim focus:ring-0 px-3 py-3 font-body-md text-on-surface transition-all"
                           id="firm" name="firm" placeholder="Institutional Capital Partners" type="text"
                         />
                       </div>
@@ -145,7 +104,7 @@ export default function ContactPage() {
                           Investment Interest
                         </label>
                         <select
-                          className="bg-surface-container-low border-0 border-b border-outline-variant focus:border-tertiary-fixed-dim focus:ring-0 px-0 py-3 font-body-md text-on-surface transition-all appearance-none"
+                          className="bg-surface-container-low border-0 border-b border-outline-variant focus:border-tertiary-fixed-dim focus:ring-0 px-3 py-3 font-body-md text-on-surface transition-all appearance-none"
                           id="interest" name="interest"
                         >
                           <option value="">Select Asset Class</option>
@@ -161,7 +120,7 @@ export default function ContactPage() {
                         Message
                       </label>
                       <textarea
-                        className="bg-surface-container-low border-0 border-b border-outline-variant focus:border-tertiary-fixed-dim focus:ring-0 px-0 py-3 font-body-md text-on-surface transition-all resize-none"
+                        className="bg-surface-container-low border-0 border-b border-outline-variant focus:border-tertiary-fixed-dim focus:ring-0 px-3 py-3 font-body-md text-on-surface transition-all resize-none"
                         id="message" name="message" placeholder="How can our brokerage assist your investment strategy?" rows={4}
                       />
                     </div>
