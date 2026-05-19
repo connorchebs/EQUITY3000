@@ -159,14 +159,14 @@ export default function OpportunitiesPage() {
         </div>
 
         <div className="flex flex-wrap gap-4 mb-stack-lg">
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1 min-w-[180px]">
             <label className="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">
               INDUSTRY
             </label>
             <select
               value={sectorFilter}
               onChange={(e) => setSectorFilter(e.target.value)}
-              className="bg-surface-container-lowest border border-outline-variant px-4 py-2 font-body-md text-on-surface focus:outline-none focus:border-tertiary-fixed-dim"
+              className="w-full bg-surface-container-lowest border border-outline-variant px-4 py-2 font-body-md text-on-surface focus:outline-none focus:border-tertiary-fixed-dim"
             >
               <option value="">All Sectors</option>
               <option value="Sustainability">Sustainability</option>
@@ -180,14 +180,14 @@ export default function OpportunitiesPage() {
             </select>
           </div>
 
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1 min-w-[180px]">
             <label className="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">
               MIN. INVESTMENT
             </label>
             <select
               value={investmentFilter}
               onChange={(e) => setInvestmentFilter(e.target.value as InvestmentRange)}
-              className="bg-surface-container-lowest border border-outline-variant px-4 py-2 font-body-md text-on-surface focus:outline-none focus:border-tertiary-fixed-dim"
+              className="w-full bg-surface-container-lowest border border-outline-variant px-4 py-2 font-body-md text-on-surface focus:outline-none focus:border-tertiary-fixed-dim"
             >
               <option value="">Any Amount</option>
               <option value="0-199999">Under $200k</option>
@@ -196,14 +196,14 @@ export default function OpportunitiesPage() {
             </select>
           </div>
 
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1 min-w-[180px]">
             <label className="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">
               GEOGRAPHY
             </label>
             <select
               value={geographyFilter}
               onChange={(e) => setGeographyFilter(e.target.value)}
-              className="bg-surface-container-lowest border border-outline-variant px-4 py-2 font-body-md text-on-surface focus:outline-none focus:border-tertiary-fixed-dim"
+              className="w-full bg-surface-container-lowest border border-outline-variant px-4 py-2 font-body-md text-on-surface focus:outline-none focus:border-tertiary-fixed-dim"
             >
               <option value="">All Regions</option>
               <option value="United Kingdom">United Kingdom</option>
