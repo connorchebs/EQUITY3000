@@ -1,8 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
-  basePath: '/EQUITY3000',
   images: {
     remotePatterns: [
       {
@@ -10,7 +8,6 @@ const nextConfig: NextConfig = {
         hostname: "lh3.googleusercontent.com",
       },
     ],
-    unoptimized: true,
   },
 };
 
