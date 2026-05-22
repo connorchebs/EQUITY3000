@@ -7,7 +7,7 @@ const HERO_IMAGE =
 export default function HomePage() {
   return (
     <>
-      <section className="relative min-h-[870px] flex items-center overflow-hidden">
+      <section className="-mt-20 relative min-h-[870px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent z-10"></div>
           <Image
