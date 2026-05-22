@@ -87,11 +87,11 @@ export default function HomePage() {
               <h2 className="font-headline-md text-headline-md text-primary mb-6">THE PROCESS</h2>
               <div className="w-24 h-1 bg-tertiary-fixed-dim mb-6"></div>
               <Link
-                href="/opportunities"
+                href="/process"
                 className="px-8 py-4 bg-primary-container text-on-primary font-label-md uppercase tracking-wider rounded transition-all hover:bg-primary hover:shadow-lg active:scale-95 block text-center"
                 style={{ letterSpacing: "0.8px" }}
               >
-                View Opportunities
+                Our Process
               </Link>
             </div>
             <div className="lg:w-3/5 grid grid-cols-1 md:grid-cols-2 gap-stack-md">

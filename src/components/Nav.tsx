@@ -8,7 +8,7 @@ const LOGO_URL = "/E3K-NB-site.png";
 
 const navLinks = [
   { label: "Home", href: "/" },
-  { label: "Opportunities", href: "/opportunities" },
+  { label: "Our Process", href: "/process" },
   { label: "Our Team", href: "/team" },
 ];
 
