@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 const LOGO_URL = "/E3K-NB-site.png";
 
@@ -14,9 +15,16 @@ const navLinks = [
 
 export default function Nav() {
   const pathname = usePathname();
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 10);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <header className="sticky top-0 z-50 bg-surface border-b border-outline-variant">
+    <header className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? "bg-surface/80 backdrop-blur-md border-b border-outline-variant" : "bg-transparent border-b border-transparent"}`}>
       <nav className="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
         <Link href="/">
           <Image src={LOGO_URL} alt="EQUITY3000 Logo" width={160} height={40} className="h-10 w-auto object-contain" />
