@@ -49,7 +49,11 @@ export default function Nav() {
         </div>
         <Link
           href="/contact"
-          className="hidden lg:block px-6 py-3 border border-primary text-on-surface font-label-md text-label-md uppercase tracking-wider hover:bg-surface-container transition-colors duration-300"
+          className={`hidden lg:block px-6 py-3 border font-label-md text-label-md uppercase tracking-wider transition-colors duration-300 ${
+            scrolled
+              ? "border-primary text-on-surface hover:bg-surface-container"
+              : "border-white text-white hover:bg-white/10"
+          }`}
         >
           Contact
         </Link>
