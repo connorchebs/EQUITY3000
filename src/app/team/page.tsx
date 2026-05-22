@@ -43,7 +43,7 @@ export default function TeamPage() {
           </div>
           <div className="p-stack-sm flex-grow">
             <p className="font-label-md text-label-md uppercase tracking-wider text-on-tertiary-container mb-1">
-              Job title
+              Founder, Private Equity Broker
             </p>
             <h3 className="font-headline-sm text-headline-sm mb-4">Brian Cheboski, MBA</h3>
             <p className="font-body-md text-body-md text-on-surface-variant mb-6">Bio coming soon.</p>
