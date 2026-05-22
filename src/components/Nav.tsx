@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const LOGO_URL = "/EQUITY3000/E3K-NB-site.png";
+const LOGO_URL = "/E3K-NB-site.png";
 
 const navLinks = [
   { label: "Home", href: "/" },

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const LOGO_URL = "/EQUITY3000/EQU3000-NB-site.png";
+const LOGO_URL = "/EQU3000-NB-site.png";
 
 export default function Footer() {
   return (
